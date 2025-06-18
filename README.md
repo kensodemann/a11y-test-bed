@@ -1,59 +1,23 @@
 # A11yTestBed
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+The intent here is to wrap a non-Ionic application in Capacitor so we can test out how standard HTML elements behave with regard to TalkBack and VoiceOver. This is meant to be functional for testing, and not meant to be pretty. In many cases, it is also showing bad coding patterns just to drive home the fact that certain patterns that people try to implement should not be used.
 
-## Development server
+AAMOF, in many cases bad practices are followed simply to show how annoying the results actually are.
 
-To start a local development server, run:
+The secondary intent is to show that TalkBack and VoiceOver behave differently and that is just life. **Do NOT** expect the same results on each OS.
 
-```bash
-ng serve
-```
+This app is intended to be run on native devices with the proper assistive tech enabled.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- `npm i`
+- `npm run build`
+- `npx cap open android`
+- `npx cap open ios`
 
-## Code scaffolding
+## Potentially Useful Docs
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- [Using ARIA](https://www.w3.org/TR/using-aria/): This is a very practical guide. Read this first, and understand the rules.
+- [Providing Accessible Names and Descriptions](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/): TL;DR version is "properly use labels, for the most part, fill in with other stuff _only_ when needed." Good reading and most people have issues in this area. Pay attention to the warnings.
+- [Cardinal Rules of Naming](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#cardinalrulesofnaming): Naming is hard, but these are very good rules, especially Rule 2. _Always_ follow rule 2.
+- [Composing Effective and User-friendly Accessible Names](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/#naming_effectively): Again, naming is hard, but these guides help you to create good names that don't annoy your users.
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
