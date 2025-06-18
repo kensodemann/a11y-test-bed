@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">a11y-test-bed</string>
+    <string name="title_activity_main">a11y-test-bed</string>
+    <string name="package_name">io.ionic.a11ytestbed</string>
+    <string name="custom_url_scheme">io.ionic.a11ytestbed</string>
+</resources>
